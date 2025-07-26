@@ -1,0 +1,222 @@
+@charset "utf-8";
+
+/*header*/
+header{
+	background: url("Images/header marble.jpg") center/ cover no-repeat;
+	height: 100px;
+}
+
+header .navhead{
+	color: grey;
+
+}
+
+.navi {
+	margin-top: 25px;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: 50px;
+}
+
+.headcon {
+  display: flex;
+}
+
+.navi ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	overflow: hidden;
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+#logo {
+	width: 500px;
+	height: auto;
+	margin-left: 25px;
+	margin-top: 10px;
+}
+
+li  a, .dropbtn {
+	display: inline-block;
+	color: black;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+	color: blue;
+}
+
+li.dropdown {
+	display: inline-block;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 160px;
+	z-index: 500;
+}
+
+.dropdown-content a{
+	color: #674000;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: indianred;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block
+}
+
+/*body*/
+body{
+	padding: 0;
+	margin: 0;
+  	font-family: "Libertinus Mono", monospace;
+  	font-weight: 400;
+  	font-style: normal;
+	background: url("Images/background marble.jpg") 
+
+}
+
+.tito{
+	display:flex;
+	justify-content:center;
+	font-size: 60px;
+	font-weight: bolder;
+	margin-top:50px;
+}
+
+#cap {
+	width:500px;
+	height:500px;
+	border-radius: 100%;
+	margin-left: 50px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	overflow:hidden;
+	object-fit: cover;
+	
+	animation-name: swell;
+	animation-duration: 1s;
+	animation-play-state: paused;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+#cap:hover {
+	animation-play-state: running;
+}
+
+#cap:not(:hover) {
+	animation-name: back;
+	animation-duration: 1s;
+	animation-play-state: running;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes swell{
+	0%{
+		
+	}
+	
+	50%{
+		scale: 1.1;
+	}
+	
+	100%{
+		scale:1;
+	}
+}
+
+@keyframes back{
+	0%{
+		
+	}
+	100%{
+		scale:1;
+	}
+}
+
+#cip {
+	width:500px;
+	height:500px;
+	border-radius: 100%;
+	margin-left: 50px;
+	margin-bottom: 50px;
+	margin-top: 75px;
+}
+
+#cup {
+	width:500px;
+	height:500px;
+	border-radius: 100%;
+	margin-left: 50px;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+
+.desc {
+	display: flex;
+	flex-direction: row;
+	
+}
+
+.descbox1 {
+	justify-content:flex-end;
+	align-content: flex-end;
+	margin-left: 200px;
+	margin-bottom: 50px;
+	width: 800px;
+	font-size: 30px;
+	margin-top: 0px;
+}
+
+.descbox12 {
+	justify-content:flex-end;
+	align-content: flex-end;
+	margin-left: 200px;
+	margin-bottom: 50px;
+	width: 800px;
+	font-size: 30px;
+	margin-top: 0px;
+}
+.descbox2 {
+	justify-content:flex-end;
+	align-content: flex-end;
+	margin-left: 200px;
+	margin-top: 50px;
+	width: 800px;
+	font-size: 30px;
+	margin-bottom:50px;
+}
+
+/*footer*/
+footer{
+	background: url("Images/footer marble.jpg") center no-repeat;
+	height: 80px;
+}
+.footcon {
+	display: flex;
+}
+
+.copy {
+	font-size: 25px;
+	color: white;
+	margin-top: 30px;
+	margin-left: 20px;
+}
